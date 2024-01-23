@@ -1,5 +1,5 @@
 # FirstFlatpak
-First Flatpak tutorial to learn Flatpak building.
+First Flatpak tutorial to learn Flatpak building, following the tutorial here https://docs.flatpak.org/en/latest/first-build.html.
 
 ## Steps for building the RPMs/SRPMs yourself
 1) Install the following packages (With whatever package manager you use, dnf is used here)
@@ -20,7 +20,7 @@ or Download ZIP with the green button and extract it
 ```console
 flatpak-builder --force-clean build-dir org.flatpak.Hello.yml
 ```
-or (If you want the Flatpak to be exported to a repo)
+or (If you want the Flatpak to be exported to a repo directory as well.)
 ```console
 flatpak-builder --repo=repo --force-clean build-dir org.flatpak.Hello.yml
 ```
