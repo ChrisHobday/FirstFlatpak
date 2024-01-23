@@ -16,9 +16,13 @@ git clone https://github.com/ChrisHobday/FirstFlatpak
 ```
 or Download ZIP with the green button and extract it
 
-4) Build the Flatpak with flatpak-builder (Run this from within the FirstFlatpak directory. Make sure build-dir is removed. This will use the yml manifest to make the Flatpak in the created build-dir.)
+4) Build the Flatpak with flatpak-builder (Run this from within the FirstFlatpak directory. This will use the yml manifest to make the Flatpak in the created build-dir.)
 ```console
-flatpak-builder build-dir org.flatpak.Hello.yml
+flatpak-builder --force-clean build-dir org.flatpak.Hello.yml
+```
+or (If you want the Flatpak to be exported to a repo)
+```console
+flatpak-builder --repo=repo --force-clean build-dir org.flatpak.Hello.yml
 ```
 
 ## Steps for Installing/Running the built Flatpak
