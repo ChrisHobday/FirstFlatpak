@@ -1,7 +1,7 @@
 # FirstFlatpak
 First Flatpak tutorial to learn Flatpak building, following the tutorial here https://docs.flatpak.org/en/latest/first-build.html.
 
-## Steps for building the RPMs/SRPMs yourself
+## Steps for building the Flatpak
 1) Install the following packages (With whatever package manager you use, dnf is used here)
 ```console
 dnf install flatpak flatpak-builder
